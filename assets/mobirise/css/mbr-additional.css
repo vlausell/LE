@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif:400);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700);
 
 
 
@@ -20,39 +22,39 @@ body {
   line-height: 1.6;
 }
 .display-1 {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 4rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 6.4rem;
 }
 .display-2 {
-  font-family: 'Bree Serif', serif;
-  font-size: 2rem;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 2.6rem;
 }
 .display-2 > .mbr-iconfont {
-  font-size: 3.2rem;
+  font-size: 4.16rem;
 }
 .display-4 {
-  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
 }
 .display-4 > .mbr-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Bree Serif', serif;
-  font-size: 1.2rem;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.4rem;
 }
 .display-5 > .mbr-iconfont {
-  font-size: 1.92rem;
+  font-size: 2.24rem;
 }
 .display-7 {
-  font-family: 'Bree Serif', serif;
-  font-size: 1rem;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.6rem;
 }
 .display-7 > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 2.56rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
@@ -66,9 +68,9 @@ body {
     line-height: calc( 1.4 * (2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
-    font-size: 1.6rem;
-    font-size: calc( 1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2.08rem;
+    font-size: calc( 1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
     font-size: 0.8rem;
@@ -76,9 +78,9 @@ body {
     line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
-    font-size: 0.96rem;
-    font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.12rem;
+    font-size: calc( 1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20))));
   }
 }
 /* Buttons */
@@ -641,14 +643,14 @@ a:hover {
   background-color: #f5f5f5;
   box-shadow: none;
   color: #565656;
-  font-family: 'Bree Serif', serif;
-  font-size: 1rem;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.6rem;
   line-height: 1.43;
   min-height: 3.5em;
   padding: 1.07em .5em;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 2.56rem;
 }
 .form-control,
 .form-control:focus {
@@ -1294,6 +1296,37 @@ body {
     flex: auto!important;
   }
 }
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #a12525;
+  color: #ffffff;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #a12525;
+  border-bottom-color: #a12525;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #a12525 !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #7f1933 !important;
+  box-shadow: none !important;
+}
 .cid-qXFiBiLnq7 .navbar {
   padding: .5rem 0;
   background: #333333;
@@ -1676,7 +1709,9 @@ body {
   color: #c1c1c1 !important;
 }
 .cid-qXFElg4xeh {
-  background-image: url("../../../assets/images/mbr-1620x1080.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-1-1920x1440.jpg");
 }
 .cid-qXFElg4xeh h1 {
   color: #616161;
@@ -1696,7 +1731,9 @@ body {
   color: #232323;
 }
 .cid-qXFMQQmZ9n {
-  background-image: url("../../../assets/images/mbr-3-1620x1080.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-2-1920x1280.jpg");
 }
 .cid-qXFMQQmZ9n h1 {
   color: #616161;
@@ -1716,9 +1753,9 @@ body {
   color: #232323;
 }
 .cid-qXFR6OTQcZ {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-image: url("../../../assets/images/law-shelf-2000x1500.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-2-1920x1440.jpg");
 }
 .cid-qXFR6OTQcZ h1 {
   color: #616161;
@@ -1738,7 +1775,7 @@ body {
   color: #232323;
 }
 .cid-qXFR8CtsPZ {
-  background-image: url("../../../assets/images/img-20180713-123004-2000x1500.jpg");
+  background-image: url("../../../assets/images/mbr-3-1920x1280.jpg");
 }
 .cid-qXFR8CtsPZ h1 {
   color: #616161;
@@ -1758,9 +1795,9 @@ body {
   color: #232323;
 }
 .cid-qXGlh9lVYC {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-image: url("../../../assets/images/law4-630x355.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-1920x1258.jpg");
 }
 .cid-qXGlh9lVYC h1 {
   color: #616161;
@@ -2161,7 +2198,7 @@ body {
   color: #c1c1c1 !important;
 }
 .cid-qXFkZTQ71B {
-  background-image: url("../../../assets/images/law2-606x352.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1280.jpg");
 }
 .cid-qXWXDj79ki .navbar {
   padding: .5rem 0;
@@ -2545,6 +2582,8 @@ body {
   color: #c1c1c1 !important;
 }
 .cid-qXWXDm2Lb2 {
+  padding-top: 135px;
+  padding-bottom: 135px;
   background-image: url("../../../assets/images/mbr-1920x1440.jpg");
 }
 .cid-qXWXDm2Lb2 h1 {
@@ -2568,7 +2607,7 @@ body {
   color: #232323;
 }
 .cid-qXWXDrVdZA {
-  background-image: url("../../../assets/images/mbr-4-1620x1080.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1246.jpg");
 }
 .cid-qXWXDrVdZA h1 {
   color: #616161;
@@ -2992,7 +3031,9 @@ body {
   color: #c1c1c1 !important;
 }
 .cid-qXWXHnk86N {
-  background-image: url("../../../assets/images/mbr-1920x1280.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-1-1920x1280.jpg");
 }
 .cid-qXWXHnk86N h1 {
   color: #616161;
@@ -3018,7 +3059,7 @@ body {
   color: #232323;
 }
 .cid-qYgxBq8n6e {
-  background-image: url("../../../assets/images/mbr-5-1620x1080.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1080.jpg");
 }
 .cid-qYgxBq8n6e h1 {
   color: #616161;
@@ -3038,7 +3079,9 @@ body {
   color: #232323;
 }
 .cid-qYkrvRVyeq {
-  background-image: url("../../../assets/images/34-2000x1333.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/mbr-1920x1389.jpg");
 }
 .cid-qYkrvRVyeq h1 {
   color: #616161;
@@ -3063,7 +3106,7 @@ body {
 .cid-qYIIYGVmTz {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/mbr-1618x1080.jpg");
+  background-image: url("../../../assets/images/mbr-1920x1271.jpg");
 }
 .cid-qYIIYGVmTz h1 {
   color: #616161;
